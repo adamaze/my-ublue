@@ -23,15 +23,15 @@ echo "alias sshc='ssh root@castion10.adammaryniuk.com'" >> /etc/profile
 # dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
-flatpak install flathub com.google.Chrome
-flatpak install flathub com.prusa3d.PrusaSlicer
-flatpak install flathub io.podman_desktop.PodmanDesktop
-flatpak install flathub net.cozic.joplin_desktop
-flatpak install flathub org.fedoraproject.MediaWriter
-flatpak install flathub org.kde.qrca
-flatpak install flathub org.kde.yakuake
-flatpak install flathub org.raspberrypi.rpi-imager
-flatpak install flathub org.signal.Signal
+flatpak install -y --noninteractive com.google.Chrome
+flatpak install -y --noninteractive com.prusa3d.PrusaSlicer
+flatpak install -y --noninteractive io.podman_desktop.PodmanDesktop
+flatpak install -y --noninteractive net.cozic.joplin_desktop
+flatpak install -y --noninteractive org.fedoraproject.MediaWriter
+flatpak install -y --noninteractive org.kde.qrca
+flatpak install -y --noninteractive org.kde.yakuake
+flatpak install -y --noninteractive org.raspberrypi.rpi-imager
+flatpak install -y --noninteractive org.signal.Signal
 
 systemctl enable podman.socket
 systemctl enable sshd
