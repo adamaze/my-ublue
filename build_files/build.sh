@@ -22,7 +22,7 @@ echo "alias sshc='ssh root@castion10.adammaryniuk.com'" >> /etc/profile
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y --noninteractive com.prusa3d.PrusaSlicer
 flatpak install -y --noninteractive io.podman_desktop.PodmanDesktop
 flatpak install -y --noninteractive net.cozic.joplin_desktop
@@ -32,7 +32,6 @@ flatpak install -y --noninteractive org.kde.yakuake
 flatpak install -y --noninteractive org.raspberrypi.rpi-imager
 flatpak install -y --noninteractive org.signal.Signal
 
-systemctl enable podman.socket
 systemctl enable sshd
 
 mkdir -p /root/.ssh/
