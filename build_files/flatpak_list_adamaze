@@ -1,5 +1,5 @@
 app/com.prusa3d.PrusaSlicer
-app/io.podman_desktop.PodmanDesktopAdd
+app/io.podman_desktop.PodmanDesktop
 app/net.cozic.joplin_desktop
 app/org.fedoraproject.MediaWriter
 app/org.kde.qrca
