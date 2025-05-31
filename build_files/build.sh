@@ -10,10 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux \
-                nmap
-
-echo "alias sshc='ssh root@castion10.adammaryniuk.com'" >> /etc/profile 
+dnf5 install -y tmux 
 
 # Use a COPR Example:
 #
@@ -22,7 +19,6 @@ echo "alias sshc='ssh root@castion10.adammaryniuk.com'" >> /etc/profile
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-systemctl enable sshd
+#### Example for enabling a System Unit File
 
-mkdir -p /root/.ssh/
-curl https://github.com/adamaze.keys >> /root/.ssh/authorized_keys
+systemctl enable podman.socket
